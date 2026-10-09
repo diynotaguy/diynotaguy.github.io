@@ -2,51 +2,27 @@ body{
     background-color: black;
     height: 100vh;
     width: 100vw;
-
-    display: block;
-    justify-content: center;
-    align-items: center;
-    float: none;
-
     overflow: hidden;
-    padding: 0px;
-    margin: 0px;
 
     font-family: 'orbitron';
     color: #e8c033;
 
 }
 
-
-
-
 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100%;
+    position: absolute;
     width: 100%;
-
-    padding: 0px;
-    margin: 0px;
-
 }
-
 
 #container{
     perspective: 100px;
-    
-    height: fit-content;
-
-    position: absolute;
+    height: 100%;
 }
 
 #translatingBox{
-    transform: rotateX(3deg);
-    height: fit-content;
+    transform: rotateX(15deg);
+    top: 100%
 }
-
 
 @keyframes translate{
     0% {transform: translate3d(0px,0px,90px);}
@@ -55,13 +31,8 @@ div{
 
 #textPln{      
     animation-name: translate;
-    animation-duration: 40s;
+    animation-duration: 45s;
     animation-timing-function: linear;
-
-    width: 90%;
-
-    height: fit-content;
-    display: block;
 }
 
 h1{
@@ -81,4 +52,19 @@ h3{
     font-size: 70px;
     text-align: center;
     font-weight: bolder;
+}
+
+
+
+#interactive{
+    top: 10px;
+}
+
+
+#placeholder{
+    background-image: url("Images/CleanPlaceholderImage.png");
+}
+
+#placeholder:hover{
+    background-image: url("Images/MessyPlaceholderImage.jpg");
 }
