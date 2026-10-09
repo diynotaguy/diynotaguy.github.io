@@ -31,7 +31,7 @@ div{
 
 #textPln{      
     animation-name: translate;
-    animation-duration: 45s;
+    animation-duration: 65s;
     animation-timing-function: linear;
 }
 
@@ -56,15 +56,8 @@ h3{
 
 
 
-#interactive{
-    top: 10px;
-}
-
-
-#placeholder{
-    background-image: url("Images/CleanPlaceholderImage.png");
-}
-
-#placeholder:hover{
-    background-image: url("Images/MessyPlaceholderImage.jpg");
+button{
+    position: absolute;
+    top: 25px;
+    left: 15px;
 }
