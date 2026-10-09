@@ -1,18 +1,44 @@
 body{
     background-color: black;
+    height: 200vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+    
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+@keyframes translate{
+    0% {transform: translate3d(0px,0px,0px);}
+    100% {transform: translate3d(0px,-200px,800px);}
 }
 
 #container{
     perspective: 200px;
-    height: 100%;
-    width: 100%;
-    border: 10px solid grey;
+    animation-name: translate;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
-#textPln{
-    transform: rotateX(50deg);
+#textPln{   
+    transform: rotateX(25deg);
     width: 70%;
-    height: 70%;
     border: 5px solid yellow;
 }
 
