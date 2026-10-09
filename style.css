@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+#container{
+    perspective: 200px;
+    height: 100%;
+    width: 100%;
+    border: 10px solid grey;
+}
+
+#textPln{
+    transform: rotateX(50deg);
+    width: 70%;
+    height: 70%;
+    border: 5px solid yellow;
+}
+
+h1{
+    text-align: center;
+    color: yellow;
+}
